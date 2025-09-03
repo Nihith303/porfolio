@@ -304,7 +304,7 @@ function App() {
                   View Projects
                 </button>
                 <a 
-                  href="/Nihit_Jonnalagadda_Resume.pdf" 
+                  href="Nihit_Jonnalagadda_Resume.pdf" 
                   download="Nihit_Jonnalagadda_Resume.pdf"
                   className="px-8 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:text-white rounded-lg font-semibold transition-colors flex items-center"
                 >
