@@ -76,12 +76,13 @@ function App() {
 
   const skills = [
     { category: 'Programming Languages', items: [
+      { name: 'C Programming', level: 95 },
       { name: 'Python', level: 90 },
       { name: 'JavaScript', level: 85 },
       { name: 'SQL', level: 85 },
       { name: 'Java', level: 85 },
       { name: 'Groovy', level: 80 },
-      { name: 'C Programming', level: 75 },
+      { name: 'kotlin', level: 50 },
     ]},
     { category: 'Frontend Development', items: [
       { name: 'HTML5&CSS3', level: 95 },
@@ -95,7 +96,8 @@ function App() {
       { name: 'MySQL', level: 85 },
       { name: 'Next.js', level: 85 },
       { name: 'Node.js', level: 80 },
-      { name: 'Google Cloud Platform', level: 80 }
+      { name: 'Google Cloud Platform', level: 80 },
+      { name: 'Azure', level: 75 },
     ]}
   ];
 
