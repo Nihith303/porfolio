@@ -82,7 +82,6 @@ function App() {
       { name: 'Java', level: 85 },
       { name: 'Groovy', level: 80 },
       { name: 'C Programming', level: 75 },
-      { name: 'Kotlin', level: 40 },
     ]},
     { category: 'Frontend Development', items: [
       { name: 'HTML5&CSS3', level: 95 },
