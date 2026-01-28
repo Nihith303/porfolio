@@ -112,8 +112,38 @@ function App() {
       githubLink: 'https://github.com/Nihith303/VitaCoin'
     },
     {
+      title: 'Autism Detection using Eye-Tracking',
+      period: 'June 2025 - Dec 2025',
+      description: 'AI-based screening system that uses webcam eye-gaze tracking and deep learning to identify autism-related gaze behavior patterns during controlled video stimuli, enabling automated preliminary ASD assessment.',
+      technologies: ['Python', 'Deep Learning', 'Computer Vision', 'OpenCV', 'PyTorch', 'Flask'],
+      category: 'AI/ML',
+      highlights: [
+        'Real-time eye gaze tracking via webcam',
+        'CNN-based gaze direction classification',
+        'Automated ASD screening without manual assessment',
+        'Pattern matching with expected gaze behavior'
+      ],
+      githubLink: 'https://github.com/Nihith303/Autism-Detection-using-eye-tracking'
+    },
+    {
+      title: 'Rent Easy - Full-Stack Rental Marketplace',
+      period: 'Sep 2025 - Dec 2025',
+      description: 'A full-stack rental platform that lets users list, browse, and rent items seamlessly. Implements REST APIs for backend services and a responsive frontend for browsing, item management, and user interactions.',
+      technologies: ['Angular', 'Material UI', 'BootStrapCSS', 'Node.js', 'Express', 'MYSQL', 'REST APIs'],
+      category: 'Web Development',
+      highlights: [
+        'End-to-end rental marketplace with item listing and search',
+        'Secure authentication and user session management',
+        'Responsive UI with dynamic filtering and pagination',
+        'Deployed with scalable backend on Render and frontend on Vercel'
+      ],
+      BackendLinks:'https://backend-durb.onrender.com/',
+      FrontendLinks:'https://rent-easy-tan.vercel.app/',
+      githubLink: 'https://github.com/Nihith303/Rent-Easy'
+    },
+    {
       title: 'Rehab Wings - Deep Learning Rehabilitation Game',
-      period: 'Jun 2025 - Present',
+      period: 'June 2025 - May 2026',
       description: 'AI-powered rehabilitation system using fist gesture detection for nerve damage recovery. Integrates IoT-based EMG and Gyroscope sensors to detect Hemiparesis and track motor function recovery progress.',
       technologies: ['Python', 'Deep Learning', 'IoT', 'EMG Sensors', 'Gyroscope', 'Computer Vision'],
       category: 'AI/ML',
@@ -478,13 +508,35 @@ function App() {
                       </div>
                     </div>
                     
-                    <div className="flex space-x-3">
+                    <div className="flex flex-wrap gap-2">
+                      {'BackendLinks' in project && project.BackendLinks && (
+                        <a 
+                          href={project.BackendLinks} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="flex-1 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors flex items-center justify-center min-w-[100px]"
+                        >
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          Backend
+                        </a>
+                      )}
+                      {'FrontendLinks' in project && project.FrontendLinks && (
+                        <a 
+                          href={project.FrontendLinks} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="flex-1 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition-colors flex items-center justify-center min-w-[100px]"
+                        >
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          Frontend
+                        </a>
+                      )}
                       {project.githubLink && (
                         <a 
                           href={project.githubLink} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg font-medium transition-colors flex items-center justify-center"
+                          className="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg font-medium transition-colors flex items-center justify-center min-w-[100px]"
                         >
                           <Github className="w-4 h-4 mr-2" />
                           View Project
